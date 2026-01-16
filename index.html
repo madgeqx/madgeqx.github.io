@@ -1,1 +1,354 @@
-<html><body><h1>Madge Qi Xue 2026-01</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madge Qi Xue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5D3A29;
+            --accent: #C17F59;
+            --accent-light: #E8A86B;
+            --text: #2D2D2D;
+            --text-light: #555555;
+            --bg: #FAF6F1;
+            --bg-light: #FFFFFF;
+            --sidebar: #8B5A42;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.65;
+            color: var(--text);
+            background: #e0e0e0;
+            letter-spacing: 0.01em;
+        }
+
+        .cv-container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: var(--bg);
+            display: grid;
+            grid-template-columns: 1fr 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .main-content { padding: 35px 40px; }
+
+        .sidebar {
+            background: linear-gradient(180deg, var(--sidebar) 0%, var(--primary) 100%);
+            border-radius: 0 0 0 50px;
+        }
+
+        .header {
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 18px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: 0.02em;
+        }
+
+        .tagline {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-style: italic;
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin: 8px 0 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+            font-size: 0.93rem;
+            margin-top: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .header a {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent);
+        }
+
+        .header a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        section { margin-bottom: 22px; }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: underline;
+            text-decoration-color: var(--accent);
+            text-underline-offset: 4px;
+            margin-bottom: 14px;
+            letter-spacing: 0.02em;
+        }
+
+        .entry {
+            background: var(--bg-light);
+            padding: 14px 18px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--accent);
+            border-radius: 0 6px 6px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 4px;
+            letter-spacing: 0.01em;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .institution { color: var(--accent); font-weight: 600; }
+        .date { font-style: italic; }
+
+        ul { margin-left: 18px; margin-top: 8px; }
+        li {
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        li strong { font-weight: 600; color: var(--primary); }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .skill-card {
+            background: var(--bg-light);
+            padding: 14px 16px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+            font-size: 0.9rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            line-height: 1.55;
+        }
+
+        .skill-card h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+            letter-spacing: 0.01em;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        @media print {
+            html { font-size: 11px; }
+            body { background: white; }
+            .cv-container { box-shadow: none; }
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+                margin: 10px;
+            }
+            .sidebar { display: none; }
+            .main-content { padding: 24px; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.25rem; }
+            .two-col { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="main-content">
+            <header class="header">
+                <h1>Madge Qi Xue</h1>
+            </header>
+
+            <section>
+                <h2>Professional Summary</h2>
+                <div class="entry">
+                    <ul>
+                        <li><strong>16+ years</strong> of practical experience in software technical services, including <strong>13+ years</strong> deeply rooted in FinTech (9+ years in Insurance, 4+ years in Banking). Also covered 3+ years in non-financial industries such as Financial Shared Services, Customer Services, Real Estate and Property Services</li>
+                        <li>Fluent English communication skills, had cross culture working experience for Mainland China, Hong Kong, Taiwan, UK, Canadian, Singapore, India, Malaysia, Vietnam etc.</li>
+                        <li>Full Software Development Life Cycle (SDLC) experience, with a career path progressing from technical foundations to comprehensive management:
+                            <ul style="margin-left: 20px; margin-top: 5px;">
+                                <li>2008–2017 (9 years): Focused on Software Coding & Design</li>
+                                <li>2008–Present (16 years): Deep expertise in all testing types</li>
+                                <li>2014–Present (11 years): Led System Business Requirement Analysis</li>
+                                <li>2017–Present (7 years): Experienced in Project Management, including budget/resource allocation, executive status reporting, and risk/issue management etc.</li>
+                            </ul>
+                        </li>
+                        <li>Accumulated actionable results at every stage, capable of coordinating multiple systems/workstreams in parallel, precisely adapting to technical execution, business breakdown, and cross-regional and cross-departmental coordination scenarios</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+
+                <div class="entry">
+                    <h3>Postgraduate Diploma in Artificial Intelligence and Business Transformation</h3>
+                    <p class="subtitle"><span class="institution">HKU Institute for China Business</span> | <span class="date">May 2025 - Jan 2027 (Expected)</span></p>
+                    <p style="font-size: 0.93rem; margin-top: 5px; font-style: italic;">Part-time, In-progress</p>
+                </div>
+
+                <div class="entry">
+                    <h3>Bachelor's Degree in Software Engineering</h3>
+                    <p class="subtitle"><span class="institution">Hubei University of Technology</span> | <span class="date">Sep 2004 - Jun 2008</span></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Qualifications & Certifications</h2>
+                <div class="entry">
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Language:</span> English - 16+ years working in English environments, TOEIC 805; Mandarin - Native; Cantonese</p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Artificial Intelligence:</span> Artificial Intelligence Trainer (Senior/Level 3) (Jul 2025)</p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Project Management:</span> PMI PMP (Sep 2021)</p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Agile (Scrum Alliance):</span> Advanced Certified Scrum Product Owner (A-CSPO) (Jun 2025), Advanced Certified Scrum Master (A-CSM) (Apr 2025), Agile OKRs (Sep 2024), CSPO (Dec 2022), CSM (Jan 2017)</p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Finance:</span> edX HKU - Introduction to FinTech (Sep 2025); XuetangX (Tsinghua University) - Principles of Accounting (Jan 2024) & Financial Analysis and Decision Making (Oct 2024)</p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Data:</span> Informatica Cloud Modernization: 1) Cloud Data Warehouse & Cloud Data Lake, 2) Data Catalog, Data Integration, & Mass Ingestion, 3) Cloud Data Quality & Data Governance (Apr 2020 - Jun 2020)</p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Insurance:</span> LOMA (ALMI) 60% completed, FLMI Level 1 Certificate (280, 290) (Mar 2012), and passed 301</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Work Experience</h2>
+
+                <div class="entry">
+                    <h3>Senior Business Analyst / IT PM</h3>
+                    <p class="subtitle"><span class="institution">Shenzhou Digital Rongxin Software Co., Ltd.</span> | <span class="date">Jan 2024 - Jul 2025</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> On-site service for a Fortune 500 multinational bank, focusing on cross-border data compliance and permission management, supporting the implementation of the CAC (Cyberspace Administration of China) data export security assessment.</p>
+                    <p style="font-size: 0.93rem;"><strong>Core Skills:</strong> Cross-border Data Compliance Consulting, Financial IT Requirements Analysis, Agile Project Management, Permission Control Process Optimization, Data Security Risk Assessment.</p>
+                </div>
+
+                <div class="entry">
+                    <h3>Senior Business Analyst / Scrum Master</h3>
+                    <p class="subtitle"><span class="institution">Bamboo Technologies</span> | <span class="date">Apr 2023 - Jan 2024</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led the full-link requirement implementation for a global leading real estate firm's property valuation system upgrade, focusing on commercial real estate contract management and multi-language adaptation modules. Promoted the project using Agile Scrum mode, organized cross-timezone collaboration meetings (Client + Tech Team), completed SQL Server database modeling optimization, UI/UX prototype reviews, formulated focused testing strategies, tracked core module coverage improvement, and managed project schedule, quality, and cross-border collaboration risks throughout.</p>
+                    <p style="font-size: 0.93rem;"><strong>Core Skills:</strong> Commercial Real Estate IT Requirements Analysis, Cross-border Project Collaboration, Agile Scrum Delivery, Prototype Design, Database Modeling, Test Strategy Optimization.</p>
+                </div>
+
+                <div class="entry">
+                    <h3>Manager</h3>
+                    <p class="subtitle"><span class="institution">Accenture (China) Co., Ltd. Guangzhou Branch</span> | <span class="date">Jul 2008 - Feb 2023</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led the full lifecycle management of financial IT projects, coordinating a team of 30+ to complete the delivery of a Life Insurance Core System; coordinated across departments and countries, collaborating with client senior management to formulate plans and control risks; excavated business requirements, produced professional analysis documents, and drove implementation. Led 2 RPA automation projects. Designed cross-border data compliance solutions for a bank, helping the client pass regulatory acceptance with a 100% compliance pass rate.</p>
+                    <p style="font-size: 0.93rem;"><strong>Core Skills:</strong> IT Project Management, Agile Management, Banking/Insurance Business, Requirements Analysis, RPA Optimization, Compliance Solution Design.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Key Project Experience</h2>
+
+                <div class="entry">
+                    <h3>Well-known Multinational Bank - Information Protection and InfoSecurity Project</h3>
+                    <p class="subtitle"><span class="institution">IT Project Manager</span> | <span class="date">Jan 2024 - Apr 2025</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led the upgrade of customer data cross-border permission management, managed system enhancement budget for over 200K USD and arranged resource allocation, strengthened user access approval processes for 5 core systems, clarified control responsibilities of China Business Managers, and cleaned up overseas user permissions; advanced the data export rectification of the Global Transfer System, tracked system enhancement defects and blockers to ensure quality delivery. Reviewed survey results of 206 systems, screened 95 systems for rectification, formulated user access enhancement control plans, and coordinated 6 teams for parallel execution across 95 systems. Perfected the CAC data export security pre-assessment form and review mechanism, coordinated multi-departmental reviewers; established the business as usual operation mechanism, transferred the new review processes to data department, and drove the approval of 31 backlog forms.</p>
+                    <p style="font-size: 0.93rem;"><strong>Project Performance:</strong> The optimized data export security pre-assessment process passed internal audit, obtained approval for 31 backlog forms; completed and closed high-difficulty global system user access enhancement rectification for 5 systems; coordinated rectification plans for 95 systems, achieving the requirement that offshore user permissions must be approved by China business, meeting delivery standards for 5 consecutive quarters. Cultivated an agile team, promoted the transition of the project to normalized operations, and significantly enhanced stakeholders' data protection awareness and internal control levels.</p>
+                </div>
+
+                <div class="entry">
+                    <h3>Well-known Multinational Bank - Cross-border Data Sharing & Security Assessment</h3>
+                    <p class="subtitle"><span class="institution">IT Project Manager</span> | <span class="date">Jul 2021 - Nov 2022</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led two core tasks: 1. Responsible for "Identity & Access Management (IAM)" transformation for 10+ Retail Bank systems, liaising with business users to clarify requirements and coordinating multiple teams for integration; 2. Spearheaded data export security pre-assessment for 1200+ systems, organizing business and IT heads to fill in "Pre-assessment" forms, and subsequently screening based on form data.</p>
+                    <p style="font-size: 0.93rem;"><strong>Project Performance:</strong> Completed IAM transformation for 10+ Retail Bank systems, implementing SSO via Microsoft Active Directory (AD) and replacing email approvals with ServiceNow form approval workflows (solving audit trail issues), improving permission approval efficiency by 40% and achieving 100% compliance for cross-border data access. Completed survey of 1200+ systems, collecting data containing 50+ key fields, and using decision trees to precisely screen systems requiring formal assessment, with results aligning with CAC regulatory requirements.</p>
+                </div>
+
+                <div class="entry">
+                    <h3>Leading Global Real Estate Firm - Property Valuation System Upgrade</h3>
+                    <p class="subtitle"><span class="institution">Senior Business Analyst / Scrum Master</span> | <span class="date">Apr 2023 - Jan 2024</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Liaised with client-side Product Managers, focusing on functional iteration of the Azure cloud architecture system; led the breakdown of localization requirements for multiple countries/regions, outputting prototypes and user stories; used a 2-week Agile sprint cycle to coordinate requirement implementation and iteration advancement.</p>
+                    <p style="font-size: 0.93rem;"><strong>Project Performance:</strong> Completed the launch of the Contract Management module, helping the client achieve 100% business compliance; promoted global system rollout (Malaysia live, India in user testing, Taiwan China analysis completed, Vietnam and other regions progressing steadily); completed 10+ functional launches cumulatively, ensuring delivery efficiency; built a system knowledge base, integrating scattered user stories covering business and technical dimensions.</p>
+                </div>
+
+                <div class="entry">
+                    <h3>Major International Insurance Company - Medical Rider Repricing Project</h3>
+                    <p class="subtitle"><span class="institution">IT Solution Architect</span> | <span class="date">Dec 2015 - Aug 2017</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Worked on-site in Malaysia to complete requirement analysis and workload estimation, and formulated the overall scheme and development/testing plans. Handled 20+ requirement changes, completing impact analysis and priority sorting. Led a 10-person design team and a 30-person development team to complete the full process design and Informix 4GL development of over 10 functional modules within 80% of the life insurance core system modules. Led system and user testing, controlling defects and progress until system upgrade and deployment.</p>
+                    <p style="font-size: 0.93rem;"><strong>Project Performance:</strong> Coordinated 2,000 man-days of workload, delivering high-quality repricing transformation for health insurance riders; the project was delivered on schedule, helping to improve the company's profit margin after medical insurance claims for the next 2-3 years.</p>
+                </div>
+
+                <div class="entry">
+                    <h3>Major International Insurance Company - GST Project</h3>
+                    <p class="subtitle"><span class="institution">IT Solution Architect</span> | <span class="date">Jul 2014 - Nov 2015</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led a 6-person design team to complete requirement analysis and scheme formulation for 6 major modules, and planned resource allocation for a 30-person development team. Developed GST batch processing interfaces using Informix 4GL, optimizing manual modules into semi-automated ones, and controlling project risks and requirement changes until go-live and 3 months of maintenance.</p>
+                    <p style="font-size: 0.93rem;"><strong>Project Performance/Honors:</strong> The system met local regulations; use case time for core modules shortened from 2 hours to 30 seconds, and batch processing took only a few minutes; led the team to complete development on time and with quality; received the PCA China IT Hub "The Best Ones" Award for People Management in January 2015.</p>
+                </div>
+
+                <div class="entry">
+                    <h3>Major State-owned Power Company - Financial System RPA</h3>
+                    <p class="subtitle"><span class="institution">Project Manager / Business Analyst</span> | <span class="date">May 2018 - Nov 2018</span></p>
+                    <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Coordinated the full project lifecycle, adopting a "Waterfall + Agile" mixed management mode to control risks and progress; sorted out 80+ accounting/cashier processes, established a three-dimensional evaluation system of "Applicability-ROI-Implementation Difficulty", and screened out 2 core processes and 6 key nodes; designed plug-in RPA intelligent assistants based on UiPath + VB.net to achieve automation of repetitive operations, rapid reconciliation of 100,000+ data entries, and seamless connection with system process breakpoints. Linked cross-departmental teams to complete development, testing, acceptance, and deployment, assisting the client in creating an industry benchmark.</p>
+                    <p style="font-size: 0.93rem;"><strong>Project Performance/Honors:</strong> Average efficiency of 6 core nodes increased by 50%; data reconciliation time shortened from 4 hours to 15 minutes, saving 6+ hours per day on average; released 3 financial personnel, reducing labor costs by approximately 25%; financial audit error rate dropped from 0.8% to 0.05%.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Tools Used</h2>
+                <div class="two-col">
+                    <div class="skill-card">
+                        <h4>Project/Agile Management & Knowledge Base</h4>
+                        <p>Confluence, Jira, ClickUp, Microsoft Project, SharePoint</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Data Management</h4>
+                        <p>Informatica MDM, SQL Server, MySQL, Informix</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Design & Modeling</h4>
+                        <p>Microsoft Visio, Figma, Axure</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Others</h4>
+                        <p>Microsoft Dynamics 365, Microsoft Office Suite, etc.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="sidebar"></div>
+    </div>
+</body>
+</html>
