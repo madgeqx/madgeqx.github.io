@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madge Qi Xue</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #5D3A29;
@@ -12,6 +12,7 @@
             --accent-light: #E8A86B;
             --text: #2D2D2D;
             --text-light: #555555;
+            --text-cn: #666666;
             --bg: #FAF6F1;
             --bg-light: #FFFFFF;
             --sidebar: #8B5A42;
@@ -26,7 +27,7 @@
         }
 
         body {
-            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Source Sans Pro', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.65;
             color: var(--text);
             background: #e0e0e0;
@@ -181,6 +182,21 @@
             color: var(--accent);
         }
 
+        .cn {
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            color: var(--text-cn);
+            font-size: 0.92em;
+        }
+
+        .cn-block {
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            color: var(--text-cn);
+            font-size: 0.88rem;
+            margin-top: 5px;
+            padding-left: 0;
+            line-height: 1.6;
+        }
+
         @media print {
             html { font-size: 11px; }
             body { background: white; }
@@ -204,144 +220,192 @@
     <div class="cv-container">
         <div class="main-content">
             <header class="header">
-                <h1>Madge Qi Xue</h1>
+                <h1>Madge Qi Xue <span class="cn">薛琦</span></h1>
             </header>
 
             <section>
-                <h2>Professional Summary</h2>
+                <h2>Professional Summary <span class="cn">个人优势</span></h2>
                 <div class="entry">
                     <ul>
-                        <li><strong>16+ years</strong> of practical experience in software technical services, including <strong>13+ years</strong> deeply rooted in FinTech (9+ years in Insurance, 4+ years in Banking). Also covered 3+ years in non-financial industries such as Financial Shared Services, Customer Services, Real Estate and Property Services</li>
-                        <li>Fluent English communication skills, had cross culture working experience for Mainland China, Hong Kong, Taiwan, UK, Canadian, Singapore, India, Malaysia, Vietnam etc.</li>
+                        <li><strong>16+ years</strong> of practical experience in software technical services, including <strong>13+ years</strong> deeply rooted in FinTech (9+ years in Insurance, 4+ years in Banking). Also covered 3+ years in non-financial industries such as Financial Shared Services, Customer Services, Real Estate and Property Services
+                            <p class="cn-block">16年软件技术服务实战经验，其中深耕金融科技行业13年+（保险业9年+、银行业4年+），同步覆盖财务共享、客户服务、地产及物业服务等非金融领域3年+，兼具垂直领域深度与跨行业适配能力</p>
+                        </li>
+                        <li>Fluent English communication skills, had cross culture working experience for Mainland China, Hong Kong, Taiwan, UK, Canadian, Singapore, India, Malaysia, Vietnam etc.
+                            <p class="cn-block">流利的英语沟通能力，拥有中国大陆、香港、台湾、英国、加拿大、新加坡、印度、马来西亚、越南等地的跨文化工作经验</p>
+                        </li>
                         <li>Full Software Development Life Cycle (SDLC) experience, with a career path progressing from technical foundations to comprehensive management:
+                            <p class="cn-block">全程参与软件工程全生命周期，职业路径从技术根基到综合管理层层递进：</p>
                             <ul style="margin-left: 20px; margin-top: 5px;">
-                                <li>2008–2017 (9 years): Focused on Software Coding & Design</li>
-                                <li>2008–Present (16 years): Deep expertise in all testing types</li>
-                                <li>2014–Present (11 years): Led System Business Requirement Analysis</li>
-                                <li>2017–Present (7 years): Experienced in Project Management, including budget/resource allocation, executive status reporting, and risk/issue management etc.</li>
+                                <li>2008–2017 (9 years): Focused on Software Coding & Design
+                                    <p class="cn-block">2008-2017年（9年）专注软件编码与设计</p>
+                                </li>
+                                <li>2008–Present (16 years): Deep expertise in all testing types
+                                    <p class="cn-block">2008年至今（16年）深耕全类型测试</p>
+                                </li>
+                                <li>2014–Present (11 years): Led System Business Requirement Analysis
+                                    <p class="cn-block">2014年至今（11年）主导系统业务需求分析</p>
+                                </li>
+                                <li>2017–Present (7 years): Experienced in Project Management, including budget/resource allocation, executive status reporting, and risk/issue management etc.
+                                    <p class="cn-block">2017年至今（7年）统筹战略咨询与项目管理</p>
+                                </li>
                             </ul>
                         </li>
-                        <li>Accumulated actionable results at every stage, capable of coordinating multiple systems/workstreams in parallel, precisely adapting to technical execution, business breakdown, and cross-regional and cross-departmental coordination scenarios</li>
+                        <li>Accumulated actionable results at every stage, capable of coordinating multiple systems/workstreams in parallel, precisely adapting to technical execution, business breakdown, and cross-regional and cross-departmental coordination scenarios
+                            <p class="cn-block">各阶段均积累了可落地的实战成果，能精准适配技术执行、业务拆解、跨地区和跨部门统筹等多场景需求</p>
+                        </li>
                     </ul>
                 </div>
             </section>
 
             <section>
-                <h2>Education</h2>
+                <h2>Education <span class="cn">教育背景</span></h2>
 
                 <div class="entry">
                     <h3>Postgraduate Diploma in Artificial Intelligence and Business Transformation</h3>
-                    <p class="subtitle"><span class="institution">HKU Institute for China Business</span> | <span class="date">May 2025 - Jan 2027 (Expected)</span></p>
-                    <p style="font-size: 0.93rem; margin-top: 5px; font-style: italic;">Part-time, In-progress</p>
+                    <p class="cn-block" style="margin-bottom: 4px;">人工智能与商业转型研究生文凭</p>
+                    <p class="subtitle"><span class="institution">HKU Institute for China Business</span> <span class="cn">香港大学中国商业学院</span> | <span class="date">May 2025 - Jan 2027 (Expected)</span></p>
+                    <p style="font-size: 0.93rem; margin-top: 5px; font-style: italic;">Part-time, In-progress <span class="cn">兼读制在读</span></p>
                 </div>
 
                 <div class="entry">
                     <h3>Bachelor's Degree in Software Engineering</h3>
-                    <p class="subtitle"><span class="institution">Hubei University of Technology</span> | <span class="date">Sep 2004 - Jun 2008</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">软件工程学士学位</p>
+                    <p class="subtitle"><span class="institution">Hubei University of Technology</span> <span class="cn">湖北工业大学</span> | <span class="date">Sep 2004 - Jun 2008</span></p>
                 </div>
             </section>
 
             <section>
-                <h2>Qualifications & Certifications</h2>
+                <h2>Qualifications & Certifications <span class="cn">资质证书</span></h2>
                 <div class="entry">
-                    <p style="margin-bottom: 8px;"><span class="skill-label">Language:</span> English - 16+ years working in English environments, TOEIC 805; Mandarin - Native; Cantonese</p>
-                    <p style="margin-bottom: 8px;"><span class="skill-label">Artificial Intelligence:</span> Artificial Intelligence Trainer (Senior/Level 3) (Jul 2025)</p>
-                    <p style="margin-bottom: 8px;"><span class="skill-label">Project Management:</span> PMI PMP (Sep 2021)</p>
-                    <p style="margin-bottom: 8px;"><span class="skill-label">Agile (Scrum Alliance):</span> Advanced Certified Scrum Product Owner (A-CSPO) (Jun 2025), Advanced Certified Scrum Master (A-CSM) (Apr 2025), Agile OKRs (Sep 2024), CSPO (Dec 2022), CSM (Jan 2017)</p>
-                    <p style="margin-bottom: 8px;"><span class="skill-label">Finance:</span> edX HKU - Introduction to FinTech (Sep 2025); XuetangX (Tsinghua University) - Principles of Accounting (Jan 2024) & Financial Analysis and Decision Making (Oct 2024)</p>
-                    <p style="margin-bottom: 8px;"><span class="skill-label">Data:</span> Informatica Cloud Modernization: 1) Cloud Data Warehouse & Cloud Data Lake, 2) Data Catalog, Data Integration, & Mass Ingestion, 3) Cloud Data Quality & Data Governance (Apr 2020 - Jun 2020)</p>
-                    <p style="margin-bottom: 8px;"><span class="skill-label">Insurance:</span> LOMA (ALMI) 60% completed, FLMI Level 1 Certificate (280, 290) (Mar 2012), and passed 301</p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Language <span class="cn">语言</span>:</span> English - 16+ years working in English environments, TOEIC 805; Mandarin - Native; Cantonese <span class="cn">英语托业TOEIC 805分；普通话 - 母语；粤语</span></p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Artificial Intelligence <span class="cn">人工智能</span>:</span> Artificial Intelligence Trainer (Senior/Level 3) (Jul 2025) <span class="cn">人工智能训练师（高级/三级）</span></p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Project Management <span class="cn">项目管理</span>:</span> PMI PMP (Sep 2021)</p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Agile (Scrum Alliance) <span class="cn">敏捷认证</span>:</span> Advanced Certified Scrum Product Owner (A-CSPO) (Jun 2025), Advanced Certified Scrum Master (A-CSM) (Apr 2025), Agile OKRs (Sep 2024), CSPO (Dec 2022), CSM (Jan 2017) <span class="cn">进阶产品负责人、进阶敏捷教练、敏捷OKRs、产品负责人、敏捷教练</span></p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Finance <span class="cn">金融</span>:</span> edX HKU - Introduction to FinTech (Sep 2025); XuetangX (Tsinghua University) - Principles of Accounting (Jan 2024) & Financial Analysis and Decision Making (Oct 2024) <span class="cn">香港大学金融科技导论；清华大学会计学原理、财务分析与决策</span></p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Data <span class="cn">数据</span>:</span> Informatica Cloud Modernization: 1) Cloud Data Warehouse & Cloud Data Lake, 2) Data Catalog, Data Integration, & Mass Ingestion, 3) Cloud Data Quality & Data Governance (Apr 2020 - Jun 2020) <span class="cn">Informatica云现代化认证：云数据仓库与数据湖、数据目录与集成、云数据质量与治理</span></p>
+                    <p style="margin-bottom: 8px;"><span class="skill-label">Insurance <span class="cn">保险</span>:</span> LOMA (ALMI) 60% completed, FLMI Level 1 Certificate (280, 290) (Mar 2012), and passed 301 <span class="cn">LOMA准寿险管理师认证已完成60%</span></p>
                 </div>
             </section>
 
             <section>
-                <h2>Work Experience</h2>
+                <h2>Work Experience <span class="cn">工作经历</span></h2>
 
                 <div class="entry">
                     <h3>Senior Business Analyst / IT PM</h3>
-                    <p class="subtitle"><span class="institution">Shenzhou Digital Rongxin Software Co., Ltd.</span> | <span class="date">Jan 2024 - Jul 2025</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">高级需求分析工程师 / IT项目经理</p>
+                    <p class="subtitle"><span class="institution">Shenzhou Digital Rongxin Software Co., Ltd.</span> <span class="cn">神州数码融信软件有限公司</span> | <span class="date">Jan 2024 - Jul 2025</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> On-site service for a Fortune 500 multinational bank, focusing on cross-border data compliance and permission management, supporting the implementation of the CAC (Cyberspace Administration of China) data export security assessment.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>驻场服务世界500强跨国银行，聚焦跨境数据合规与权限管理，支撑网信办数据出境安全评估落地。</p>
                     <p style="font-size: 0.93rem;"><strong>Core Skills:</strong> Cross-border Data Compliance Consulting, Financial IT Requirements Analysis, Agile Project Management, Permission Control Process Optimization, Data Security Risk Assessment.</p>
+                    <p class="cn-block"><strong>核心技能：</strong>跨境数据合规咨询、金融IT需求分析、敏捷项目管理、权限管控流程优化、数据安全风险评估</p>
                 </div>
 
                 <div class="entry">
                     <h3>Senior Business Analyst / Scrum Master</h3>
-                    <p class="subtitle"><span class="institution">Bamboo Technologies</span> | <span class="date">Apr 2023 - Jan 2024</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">高级需求分析工程师 / 敏捷教练</p>
+                    <p class="subtitle"><span class="institution">Bamboo Technologies</span> <span class="cn">广州奔步电脑有限公司</span> | <span class="date">Apr 2023 - Jan 2024</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led the full-link requirement implementation for a global leading real estate firm's property valuation system upgrade, focusing on commercial real estate contract management and multi-language adaptation modules. Promoted the project using Agile Scrum mode, organized cross-timezone collaboration meetings (Client + Tech Team), completed SQL Server database modeling optimization, UI/UX prototype reviews, formulated focused testing strategies, tracked core module coverage improvement, and managed project schedule, quality, and cross-border collaboration risks throughout.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>主导某全球领先房企地产估价系统升级项目的全链路需求落地，聚焦商业地产合同管理、多语言适配等核心模块。以敏捷Scrum模式推进项目，组织跨时区（客户方+技术团队）协作会议，完成SQL Server数据库建模优化、UI/UX原型评审，制定测试聚焦策略并跟进核心模块覆盖率提升，全程管控项目进度、质量与跨国协作风险。</p>
                     <p style="font-size: 0.93rem;"><strong>Core Skills:</strong> Commercial Real Estate IT Requirements Analysis, Cross-border Project Collaboration, Agile Scrum Delivery, Prototype Design, Database Modeling, Test Strategy Optimization.</p>
+                    <p class="cn-block"><strong>核心技能：</strong>商业地产IT需求分析、跨国项目协作、敏捷Scrum交付、原型设计、数据库建模、测试策略优化</p>
                 </div>
 
                 <div class="entry">
                     <h3>Manager</h3>
-                    <p class="subtitle"><span class="institution">Accenture (China) Co., Ltd. Guangzhou Branch</span> | <span class="date">Jul 2008 - Feb 2023</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">经理</p>
+                    <p class="subtitle"><span class="institution">Accenture (China) Co., Ltd. Guangzhou Branch</span> <span class="cn">埃森哲（中国）有限公司广州天河分公司</span> | <span class="date">Jul 2008 - Feb 2023</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led the full lifecycle management of financial IT projects, coordinating a team of 30+ to complete the delivery of a Life Insurance Core System; coordinated across departments and countries, collaborating with client senior management to formulate plans and control risks; excavated business requirements, produced professional analysis documents, and drove implementation. Led 2 RPA automation projects. Designed cross-border data compliance solutions for a bank, helping the client pass regulatory acceptance with a 100% compliance pass rate.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>主导金融IT项目全生命周期管理，统筹30人+团队完成人寿保险核心系统交付；跨部门及跨国协调，联动客户高层制定计划、管控风险；挖掘业务需求，输出专业分析文档并推动落地。主导2个RPA自动化项目。设计银行跨境数据合规解决方案，助力客户通过监管验收，合规通过率达100%。</p>
                     <p style="font-size: 0.93rem;"><strong>Core Skills:</strong> IT Project Management, Agile Management, Banking/Insurance Business, Requirements Analysis, RPA Optimization, Compliance Solution Design.</p>
+                    <p class="cn-block"><strong>核心技能：</strong>IT项目管理、敏捷管理、银行/保险业务、需求分析、RPA优化及合规方案设计</p>
                 </div>
             </section>
 
             <section>
-                <h2>Key Project Experience</h2>
+                <h2>Key Project Experience <span class="cn">项目经历</span></h2>
 
                 <div class="entry">
                     <h3>Well-known Multinational Bank - Information Protection and InfoSecurity Project</h3>
-                    <p class="subtitle"><span class="institution">IT Project Manager</span> | <span class="date">Jan 2024 - Apr 2025</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">国际某知名商业银行——中国信息保护和信息安全项目</p>
+                    <p class="subtitle"><span class="institution">IT Project Manager</span> <span class="cn">IT项目经理</span> | <span class="date">Jan 2024 - Apr 2025</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led the upgrade of customer data cross-border permission management, managed system enhancement budget for over 200K USD and arranged resource allocation, strengthened user access approval processes for 5 core systems, clarified control responsibilities of China Business Managers, and cleaned up overseas user permissions; advanced the data export rectification of the Global Transfer System, tracked system enhancement defects and blockers to ensure quality delivery. Reviewed survey results of 206 systems, screened 95 systems for rectification, formulated user access enhancement control plans, and coordinated 6 teams for parallel execution across 95 systems. Perfected the CAC data export security pre-assessment form and review mechanism, coordinated multi-departmental reviewers; established the business as usual operation mechanism, transferred the new review processes to data department, and drove the approval of 31 backlog forms.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>主导客户数据跨境权限管理升级，强化5个核心系统用户访问审批流程，明确中国业务经理管控职责并清理海外用户权限；推进全球转账系统数据出境整改。审核206个系统调研结果，筛选95个待整改系统并制定用户访问加强控制计划，统筹6个团队执行。完善网信办数据出境安全预评估表及审核机制，协调多部门审核；建立常态化运营机制，移交新表审核流程，推动31份存量表完成审批。</p>
                     <p style="font-size: 0.93rem;"><strong>Project Performance:</strong> The optimized data export security pre-assessment process passed internal audit, obtained approval for 31 backlog forms; completed and closed high-difficulty global system user access enhancement rectification for 5 systems; coordinated rectification plans for 95 systems, achieving the requirement that offshore user permissions must be approved by China business, meeting delivery standards for 5 consecutive quarters. Cultivated an agile team, promoted the transition of the project to normalized operations, and significantly enhanced stakeholders' data protection awareness and internal control levels.</p>
+                    <p class="cn-block"><strong>项目业绩：</strong>优化的数据出境安全预评估流程通过行内审计，31份存量预评估表完成审批；完成5个高难度全球化系统用户访问加强控制整改并结项，统筹95个系统整改计划，实现离岸用户权限需中国业务审批，连续5季度交付达标。培养敏捷团队，推动项目转常态化运营，显著提升相关方数据保护意识与内控水平。</p>
                 </div>
 
                 <div class="entry">
                     <h3>Well-known Multinational Bank - Cross-border Data Sharing & Security Assessment</h3>
-                    <p class="subtitle"><span class="institution">IT Project Manager</span> | <span class="date">Jul 2021 - Nov 2022</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">国际某知名商业银行——跨境数据共享管理和安全评估项目</p>
+                    <p class="subtitle"><span class="institution">IT Project Manager</span> <span class="cn">IT项目经理</span> | <span class="date">Jul 2021 - Nov 2022</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led two core tasks: 1. Responsible for "Identity & Access Management (IAM)" transformation for 10+ Retail Bank systems, liaising with business users to clarify requirements and coordinating multiple teams for integration; 2. Spearheaded data export security pre-assessment for 1200+ systems, organizing business and IT heads to fill in "Pre-assessment" forms, and subsequently screening based on form data.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>主导两大核心任务，一是负责零售银行10+系统"身份与访问管理"改造，对接业务用户明确需求，统筹多团队完成集成落地；二是牵头1200+系统数据出境安全预评估，组织各系统业务和IT负责人填报"预评估"表格，后续基于表格数据完成筛查。</p>
                     <p style="font-size: 0.93rem;"><strong>Project Performance:</strong> Completed IAM transformation for 10+ Retail Bank systems, implementing SSO via Microsoft Active Directory (AD) and replacing email approvals with ServiceNow form approval workflows (solving audit trail issues), improving permission approval efficiency by 40% and achieving 100% compliance for cross-border data access. Completed survey of 1200+ systems, collecting data containing 50+ key fields, and using decision trees to precisely screen systems requiring formal assessment, with results aligning with CAC regulatory requirements.</p>
+                    <p class="cn-block"><strong>项目业绩：</strong>完成零售银行10+系统的"身份与访问管理"改造，通过Microsoft Active Directory (AD)实现SSO单点登录，并以ServiceNow表单审批流替代原邮件审批（解决审计痕迹缺失问题），权限审批效率提升40%，实现跨境数据访问100%合规；完成1200+系统摸查，搜集含50+个关键字段的数据，经决策树精准筛查出需正式评估的系统，成果契合网信办监管要求。</p>
                 </div>
 
                 <div class="entry">
                     <h3>Leading Global Real Estate Firm - Property Valuation System Upgrade</h3>
-                    <p class="subtitle"><span class="institution">Senior Business Analyst / Scrum Master</span> | <span class="date">Apr 2023 - Jan 2024</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">某全球领先房地产服务商——地产估价服务系统升级项目</p>
+                    <p class="subtitle"><span class="institution">Senior Business Analyst / Scrum Master</span> <span class="cn">高级需求分析工程师 / 敏捷教练</span> | <span class="date">Apr 2023 - Jan 2024</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Liaised with client-side Product Managers, focusing on functional iteration of the Azure cloud architecture system; led the breakdown of localization requirements for multiple countries/regions, outputting prototypes and user stories; used a 2-week Agile sprint cycle to coordinate requirement implementation and iteration advancement.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>对接客户方产品经理，聚焦Azure云架构系统的功能迭代；主导多国家/地区本地化需求拆解，输出原型与用户故事；以2周为敏捷冲刺周期，统筹需求落地与迭代推进。</p>
                     <p style="font-size: 0.93rem;"><strong>Project Performance:</strong> Completed the launch of the Contract Management module, helping the client achieve 100% business compliance; promoted global system rollout (Malaysia live, India in user testing, Taiwan China analysis completed, Vietnam and other regions progressing steadily); completed 10+ functional launches cumulatively, ensuring delivery efficiency; built a system knowledge base, integrating scattered user stories covering business and technical dimensions.</p>
+                    <p class="cn-block"><strong>项目业绩：</strong>完成合同管理模块上线，助力客户实现100%业务合规；推动系统全球化推广，马来西亚已上线，印度进入用户测试，中国台湾地区完成需求分析，越南等区域稳步推进；累计完成10+次功能上线，保障交付效率；搭建系统知识库，整合零散用户故事，覆盖业务、技术等维度。</p>
                 </div>
 
                 <div class="entry">
                     <h3>Major International Insurance Company - Medical Rider Repricing Project</h3>
-                    <p class="subtitle"><span class="institution">IT Solution Architect</span> | <span class="date">Dec 2015 - Aug 2017</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">某知名保险公司——医疗保险重定价项目</p>
+                    <p class="subtitle"><span class="institution">IT Solution Architect</span> <span class="cn">IT系统解决方案架构师</span> | <span class="date">Dec 2015 - Aug 2017</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Worked on-site in Malaysia to complete requirement analysis and workload estimation, and formulated the overall scheme and development/testing plans. Handled 20+ requirement changes, completing impact analysis and priority sorting. Led a 10-person design team and a 30-person development team to complete the full process design and Informix 4GL development of over 10 functional modules within 80% of the life insurance core system modules. Led system and user testing, controlling defects and progress until system upgrade and deployment.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>驻场马来西亚完成需求分析与工作量估算，制定总体方案及开发测试计划。应对20+需求变更，完成影响分析与优先级排序。带领10人设计团队、30人开发团队，完成80%人寿保险核心系统模块中10余个功能模块的全流程设计与Informix 4GL开发。主导系统及用户测试，管控缺陷与进度，直至系统升级部署。</p>
                     <p style="font-size: 0.93rem;"><strong>Project Performance:</strong> Coordinated 2,000 man-days of workload, delivering high-quality repricing transformation for health insurance riders; the project was delivered on schedule, helping to improve the company's profit margin after medical insurance claims for the next 2-3 years.</p>
+                    <p class="cn-block"><strong>项目业绩：</strong>统筹2000人天工作量，高质量完成健康险附加险重定价改造，项目如期交付，助力提升公司未来2-3年医疗险理赔后的利润空间。</p>
                 </div>
 
                 <div class="entry">
                     <h3>Major International Insurance Company - GST Project</h3>
-                    <p class="subtitle"><span class="institution">IT Solution Architect</span> | <span class="date">Jul 2014 - Nov 2015</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">某知名保险公司——商品与服务税项目</p>
+                    <p class="subtitle"><span class="institution">IT Solution Architect</span> <span class="cn">IT系统解决方案架构师</span> | <span class="date">Jul 2014 - Nov 2015</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Led a 6-person design team to complete requirement analysis and scheme formulation for 6 major modules, and planned resource allocation for a 30-person development team. Developed GST batch processing interfaces using Informix 4GL, optimizing manual modules into semi-automated ones, and controlling project risks and requirement changes until go-live and 3 months of maintenance.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>带领6人设计团队完成6大模块需求分析与方案制定，统筹30人开发团队分工。用Informix 4GL开发GST批处理接口，将手工模块优化为半自动化，管控项目风险与需求变更至上线及3个月运维。</p>
                     <p style="font-size: 0.93rem;"><strong>Project Performance/Honors:</strong> The system met local regulations; use case time for core modules shortened from 2 hours to 30 seconds, and batch processing took only a few minutes; led the team to complete development on time and with quality; received the PCA China IT Hub "The Best Ones" Award for People Management in January 2015.</p>
+                    <p class="cn-block"><strong>项目业绩/荣誉：</strong>系统满足当地法规，核心模块用例耗时从2小时缩至30秒，批处理仅需数分钟，带领团队按时按质完成开发；2015年1月获PCA中国IT中心"杰出人才管理"专项奖。</p>
                 </div>
 
                 <div class="entry">
                     <h3>Major State-owned Power Company - Financial System RPA</h3>
-                    <p class="subtitle"><span class="institution">Project Manager / Business Analyst</span> | <span class="date">May 2018 - Nov 2018</span></p>
+                    <p class="cn-block" style="margin-bottom: 4px;">国内知名电力公司——财务系统机器人流程自动化项目</p>
+                    <p class="subtitle"><span class="institution">Project Manager / Business Analyst</span> <span class="cn">IT项目经理 / 业务流程分析师</span> | <span class="date">May 2018 - Nov 2018</span></p>
                     <p style="font-size: 0.93rem; margin-bottom: 8px;"><strong>Core Responsibilities:</strong> Coordinated the full project lifecycle, adopting a "Waterfall + Agile" mixed management mode to control risks and progress; sorted out 80+ accounting/cashier processes, established a three-dimensional evaluation system of "Applicability-ROI-Implementation Difficulty", and screened out 2 core processes and 6 key nodes; designed plug-in RPA intelligent assistants based on UiPath + VB.net to achieve automation of repetitive operations, rapid reconciliation of 100,000+ data entries, and seamless connection with system process breakpoints. Linked cross-departmental teams to complete development, testing, acceptance, and deployment, assisting the client in creating an industry benchmark.</p>
+                    <p class="cn-block" style="margin-bottom: 8px;"><strong>核心职责：</strong>统筹项目全生命周期，采用"瀑布+敏捷"混合管理模式把控风险与进度；梳理80+会计/出纳流程，建立"适用性-ROI-实施难度"三维评估体系，筛选2大核心流程及6个关键节点；基于UiPath+VB.net设计外挂式RPA智能助手，实现重复性操作自动化，10万+条数据急速对账，和系统流程断点衔接。联动跨部门团队完成开发、测试、验收与部署，协助客户打造行业标杆。</p>
                     <p style="font-size: 0.93rem;"><strong>Project Performance/Honors:</strong> Average efficiency of 6 core nodes increased by 50%; data reconciliation time shortened from 4 hours to 15 minutes, saving 6+ hours per day on average; released 3 financial personnel, reducing labor costs by approximately 25%; financial audit error rate dropped from 0.8% to 0.05%.</p>
+                    <p class="cn-block"><strong>项目业绩/荣誉：</strong>6个核心节点效率平均提升50%，数据对账时间从4小时缩短至15分钟，日均节省工时6+小时；释放3名财务人员，降低人力成本约25%；财务审核失误率从0.8%降至0.05%。</p>
                 </div>
             </section>
 
             <section>
-                <h2>Tools Used</h2>
+                <h2>Tools Used <span class="cn">擅长工具</span></h2>
                 <div class="two-col">
                     <div class="skill-card">
                         <h4>Project/Agile Management & Knowledge Base</h4>
+                        <p class="cn-block" style="margin-bottom: 4px;">项目/敏捷管理和知识库</p>
                         <p>Confluence, Jira, ClickUp, Microsoft Project, SharePoint</p>
                     </div>
                     <div class="skill-card">
                         <h4>Data Management</h4>
+                        <p class="cn-block" style="margin-bottom: 4px;">数据管理</p>
                         <p>Informatica MDM, SQL Server, MySQL, Informix</p>
                     </div>
                     <div class="skill-card">
                         <h4>Design & Modeling</h4>
+                        <p class="cn-block" style="margin-bottom: 4px;">设计建模</p>
                         <p>Microsoft Visio, Figma, Axure</p>
                     </div>
                     <div class="skill-card">
                         <h4>Others</h4>
+                        <p class="cn-block" style="margin-bottom: 4px;">其它</p>
                         <p>Microsoft Dynamics 365, Microsoft Office Suite, etc.</p>
                     </div>
                 </div>
